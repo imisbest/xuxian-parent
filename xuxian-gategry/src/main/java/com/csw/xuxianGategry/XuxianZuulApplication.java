@@ -1,0 +1,17 @@
+package com.csw.xuxianGategry;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+
+@SpringBootApplication
+@EnableZuulProxy
+@EnableEurekaClient
+public class XuxianZuulApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(XuxianZuulApplication.class, args);
+    }
+
+}

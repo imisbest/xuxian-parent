@@ -1,0 +1,19 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: xuxian-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/imisbest/xuxian-base.git
+  rabbitmq:
+    host: 192.168.147.132
+    username: root
+    password: 111
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

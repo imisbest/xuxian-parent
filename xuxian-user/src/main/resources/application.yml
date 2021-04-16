@@ -1,0 +1,24 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: xuxian-user
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.147.132:3306/xuxian-user?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatement=true
+    username: root
+    password: root
+  rabbitmq:
+    username: root
+    password: 111
+    host: 192.168.147.132
+  jpa:
+    show-sql: true
+    database: mysql
+  redis:
+    host: 192.168.147.132
+jwt:
+  config:
+    key: miyao
+    ttl: 360000
+
